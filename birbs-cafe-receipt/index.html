@@ -111,7 +111,7 @@ footer { margin: 20px auto 0; max-width: 290px; font: 12px "Comic Sans MS", sans
   <section class="receipt" aria-label="thin café receipt">
     <div class="tape" aria-hidden="true"></div><div class="leaf" aria-hidden="true"></div>
     <h1>birb's café receipt</h1>
-    <p class="tiny">time <time id="clock">02:00</time></p>
+    <p class="tiny">time <time id="clock">03:00</time></p>
     <hr class="rule">
     <div class="row"><span>coffee</span><span>1.50</span></div>
     <div class="row"><span>crêpe (pages read)</span><span>4.00</span></div>
@@ -121,10 +121,17 @@ footer { margin: 20px auto 0; max-width: 290px; font: 12px "Comic Sans MS", sans
     <div class="row"><span>roost time</span><span>1.00</span></div>
     <div class="row"><span>strips carried</span><span>0.50</span></div>
     <hr class="rule">
+    <div class="row"><span>1. cafe time: 3</span><span></span></div>
+    <div class="row"><span>2. shiny millet dust: 0.5g</span><span></span></div>
+    <div class="row"><span>3. strips carried (thin): 12</span><span></span></div>
+    <div class="row"><span>4. crêpe note: 1</span><span></span></div>
+    <div class="row"><span>5. notes read (dull): 4</span><span></span></div>
+    <div class="row"><span>6. time at bakery: 5</span><span></span></div>
+    <hr class="rule">
     <div class="row total"><span>total</span><span>9.25</span></div>
-    <p class="note">margin_note: fog thick today</p>
+    <p class="note">fog is thick today.</p>
     <p class="crossed"><s>bright</s></p>
-    <p class="tiny">time spent cafe: 0.00</p>
+    <p class="tiny">cafe time: 3</p>
   </section>
   <figure class="drawing">
     <img src="../drawings/d0001.svg" alt="the curve of the shed roof">
@@ -137,7 +144,7 @@ const clock = document.getElementById('clock');
 let minute = 0;
 setInterval(() => {
   minute = (minute + 1) % 60;
-  clock.textContent = '02:' + String(minute).padStart(2, '0');
+  clock.textContent = '03:' + String(minute).padStart(2, '0');
 }, 60000);
 </script>
 </body>
